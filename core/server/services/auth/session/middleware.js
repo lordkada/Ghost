@@ -29,6 +29,7 @@ const getOrigin = (req) => {
 
 let UNO_SESSIONIONA;
 const getSession = (req, res, next) => {
+    console.log("****************");
     if (!UNO_SESSIONIONA) {
         UNO_SESSIONIONA = session({
             store: new SessionStore(models.Session),
